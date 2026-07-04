@@ -45,8 +45,7 @@ royal-tadka-website/
 
 ## 🚀 Getting Started
 
-1. Clone this repository
-   ```bash
+1.Live Link:
    git clone https://siddhi-verma-web.github.io/Royal-Tadka-Website/
    ```
 2. Open the folder in VS Code
