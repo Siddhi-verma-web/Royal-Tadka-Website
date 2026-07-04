@@ -165,7 +165,7 @@ const STATS = [
 ];
 
 const TESTIMONIALS = [
-  { name:'Ananya Sharma', loc:'Jaipur', text:'Royal Spice feels like dining in a maharaja\'s palace — the butter chicken is simply unmatched.', img:'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=60' },
+  { name:'Ananya Sharma', loc:'Jaipur', text:'Royal Tadka feels like dining in a maharaja\'s palace — the butter chicken is simply unmatched.', img:'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=60' },
   { name:'Rohan Mehta', loc:'Delhi', text:'The ambience, the service, the biryani — every single detail feels curated with love.', img:'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=60' },
   { name:'Kavya Reddy', loc:'Hyderabad', text:'Best online ordering experience — live tracking and the food arrived piping hot!', img:'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=60' },
   { name:'Arjun Nair', loc:'Bengaluru', text:'Booked a table for our anniversary — the staff made it unforgettable. Highly recommend.', img:'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=200&q=60' },
