@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Tadka | Fine Indian Dining</title>
+<meta name="description" content="Royal Tadka — a modern luxury Indian restaurant. Authentic Indian, Chinese, Italian & more. Book a table or order online.">
+
+<!-- Google Fonts: Cormorant Garamond (royal display serif), Yatra One (Indian-script flavoured accent), Poppins (clean body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Yatra+One&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="icon" type="image/png" href="assets/images/logo-transparent.png/v=2">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= LOADING SCREEN (Rangoli draw-on animation) ================= -->
+<div id="loader">
+  <svg class="rangoli-loader" viewBox="0 0 200 200">
+    <circle class="ring ring1" cx="100" cy="100" r="80"/>
+    <circle class="ring ring2" cx="100" cy="100" r="58"/>
+    <path class="petal-path" d="M100 30 C130 60 130 90 100 100 C70 90 70 60 100 30Z"/>
+    <path class="petal-path" d="M170 100 C140 130 110 130 100 100 C110 70 140 70 170 100Z"/>
+    <path class="petal-path" d="M100 170 C70 140 70 110 100 100 C130 110 130 140 100 170Z"/>
+    <path class="petal-path" d="M30 100 C60 70 90 70 100 100 C90 130 60 130 30 100Z"/>
+  </svg>
+  <p class="loader-text">ROYAL TADKA</p>
+</div>
+
+<!-- ================= SCROLL PROGRESS BAR ================= -->
+<div id="scroll-progress"></div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+   
+      
+     
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#offers">Offers</a>
+      <a href="#booking">Table Booking</a>
+      <a href="#order">Order Online</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      <button class="icon-btn cart-btn" id="cartToggle" aria-label="Cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="btn btn-ghost" id="loginBtn">Login</button>
+      <a href="#booking" class="btn btn-gold">Book a Table</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+
+  <!-- Search overlay -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-box">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="searchInput" placeholder="Search for Biryani, Pizza, Momos...">
+      <button id="searchClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <img src="https://i.pinimg.com/736x/56/9e/45/569e45d158cbc48e4bf4bba74cb20658.jpg" alt="Royal Indian dining ambience">
+    <div class="hero-overlay"></div>
+  </div>
+
+  
+ 
+
+  <div class="hero-content reveal">
+    
+    <h1 class="hero-title">Experience the <span>Taste of India</span></h1>
+    <p class="hero-sub">Authentic Indian Flavours &bull; Chinese Delights &bull; Italian Classics   &bull; Desserts &bull; Beverages</p>
+    <div class="hero-btns">
+      <a href="#menu" class="btn btn-gold btn-lg">View Menu</a>
+      <a href="#order" class="btn btn-outline btn-lg">Order Now</a>
+    </div>
+    <div class="hero-scroll"><span></span>Scroll</div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about section">
+  <div class="pattern-bg mandala-pattern"></div>
+  <div class="container about-grid">
+    <div class="about-images reveal">
+      <img class="img-main" src="https://i.pinimg.com/1200x/87/49/f6/8749f643ae236851a6949323c1f2df7b.jpg" alt="Chef preparing traditional Indian food">
+      <img class="img-float" src="https://i.pinimg.com/736x/2b/30/ef/2b30ef12db7c0072e0bf18ab45aa3ae0.jpg" alt="Royal Tadka restaurant interior">
+      <div class="exp-badge"><strong>20+</strong><span>Years of Legacy</span></div>
+    </div>
+    <div class="about-content reveal">
+      <p class="section-eyebrow">Our Story</p>
+      <h2 class="section-title">A Royal Tradition, <br>Served with Modern Grace</h2>
+      <p>Born from a family recipe book passed down four generations, Royal Tadka brings the grandeur of Indian royal kitchens — the <em>khansama</em> tradition — into a contemporary dining room. Every dish begins with ingredients sourced fresh each morning, slow-cooked spice blends ground in-house, and recipes that have never left the family.</p>
+      <ul class="about-list">
+        <li><i class="fa-solid fa-leaf"></i> Fresh, authentic ingredients sourced daily</li>
+        <li><i class="fa-solid fa-scroll"></i> Traditional recipes, four generations strong</li>
+        <li><i class="fa-solid fa-user-tie"></i> Award-winning, experienced master chefs</li>
+        <li><i class="fa-solid fa-shield-heart"></i> 100% hygienic, FSSAI-certified kitchen</li>
+        <li><i class="fa-solid fa-people-roof"></i> Warm, family-friendly ambience</li>
+        <li><i class="fa-solid fa-gem"></i> Luxury dining, everyday accessible</li>
+      </ul>
+      <a href="#menu" class="btn btn-maroon">Explore Our Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED CATEGORIES ================= -->
+<section class="categories section">
+  <div class="container">
+    <p class="section-eyebrow center">What We Serve</p>
+    <h2 class="section-title center">Featured Categories</h2>
+    <div class="cat-grid" id="catGrid"><!-- injected by JS --></div>
+  </div>
+</section>
+
+<!-- ================= MENU ================= -->
+<section id="menu" class="menu section">
+  <div class="pattern-bg paisley-pattern"></div>
+  <div class="container">
+    <p class="section-eyebrow center">Our Menu</p>
+    <h2 class="section-title center">Crafted with Passion, Served with Pride</h2>
+
+    <div class="menu-controls">
+      <div class="thali-filters" id="thaliFilters"><!-- injected by JS --></div>
+      <div class="menu-toggle-veg">
+        <label class="switch">
+          <input type="checkbox" id="vegOnly">
+          <span class="slider"></span>
+        </label>
+        <span>Veg Only</span>
+      </div>
+    </div>
+
+    <div class="menu-grid" id="menuGrid"><!-- injected by JS --></div>
+  </div>
+</section>
+
+<!-- ================= SPECIAL OFFERS ================= -->
+<section id="offers" class="offers section">
+  <div class="container">
+    <p class="section-eyebrow center">Limited Time</p>
+    <h2 class="section-title center">Special Offers</h2>
+    <div class="offers-grid" id="offersGrid"><!-- injected by JS --></div>
+  </div>
+</section>
+
+<!-- ================= ORDER ONLINE / CART ================= -->
+<section id="order" class="order section">
+  <div class="container order-grid">
+    <div class="order-info reveal">
+      <p class="section-eyebrow">Order Online</p>
+      <h2 class="section-title">Royal Flavours, <br>Delivered to Your Door</h2>
+      <p>Add dishes from our menu straight to your cart. Track your order live, from the tandoor to your table.</p>
+      <div class="delivery-mini">
+        <div><i class="fa-solid fa-bolt"></i><span>30-min Delivery</span></div>
+        <div><i class="fa-solid fa-location-crosshairs"></i><span>Live Tracking</span></div>
+        <div><i class="fa-solid fa-box"></i><span>Safe Packaging</span></div>
+      </div>
+    </div>
+
+    <div class="cart-panel reveal" id="orderCartPanel">
+      <h3><i class="fa-solid fa-bag-shopping"></i> Your Cart</h3>
+      <div class="cart-items" id="cartItemsList">
+        <p class="cart-empty">Your cart is empty. Add something delicious from the menu!</p>
+      </div>
+      <div class="promo-row">
+        <input type="text" id="promoCode" placeholder="Promo code (try ROYAL10)">
+        <button id="applyPromo" class="btn btn-ghost">Apply</button>
+      </div>
+      <div class="bill-summary" id="billSummary"></div>
+      <button class="btn btn-gold btn-block" id="checkoutBtn">Checkout</button>
+      <div class="order-tracker" id="orderTracker" hidden>
+        <h4>Order Status</h4>
+        <div class="tracker-steps">
+          <div class="step active"><i class="fa-solid fa-receipt"></i><span>Confirmed</span></div>
+          <div class="step"><i class="fa-solid fa-kitchen-set"></i><span>Preparing</span></div>
+          <div class="step"><i class="fa-solid fa-motorcycle"></i><span>Out for Delivery</span></div>
+          <div class="step"><i class="fa-solid fa-house"></i><span>Delivered</span></div>
+        </div>
+        <p class="eta">Estimated delivery: <strong id="etaTime">32 mins</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TABLE BOOKING ================= -->
+<section id="booking" class="booking section">
+  <div class="pattern-bg lotus-pattern"></div>
+  <div class="container booking-grid">
+    <div class="booking-img reveal">
+      <img src="https://i.pinimg.com/736x/2b/30/ef/2b30ef12db7c0072e0bf18ab45aa3ae0.jpg" alt="Elegant table setting at Royal Spice">
+    </div>
+    <div class="booking-form-wrap reveal">
+      <p class="section-eyebrow">Reserve</p>
+      <h2 class="section-title">Book Your Table</h2>
+      <form id="bookingForm" class="booking-form">
+        <div class="form-row">
+          <div class="form-group"><label>Name</label><input type="text" name="name" required placeholder="Your full name"></div>
+          <div class="form-group"><label>Email</label><input type="email" name="email" required placeholder="you@example.com"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Phone</label><input type="tel" name="phone" required placeholder="+91 98765 xxxxx"></div>
+          <div class="form-group"><label>Guests</label>
+            <select name="guests">
+              <option>1 Guest</option><option>2 Guests</option><option>3 Guests</option>
+              <option>4 Guests</option><option>5+ Guests</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Date</label><input type="date" name="date" required></div>
+          <div class="form-group"><label>Time</label><input type="time" name="time" required></div>
+        </div>
+        <div class="form-group"><label>Special Request</label><textarea name="request" rows="3" placeholder="Anniversary, window seat, allergies..."></textarea></div>
+        <button type="submit" class="btn btn-gold btn-block">Book Table</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Booking confirmation popup -->
+<div class="modal" id="bookingModal">
+  <div class="modal-card">
+    <div class="modal-diya">&#x1F6D5;</div>
+    <h3>Table Reserved!</h3>
+    <p id="bookingModalText">We look forward to welcoming you.</p>
+    <button class="btn btn-gold" id="closeBookingModal">Done</button>
+  </div>
+</div>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="gallery section">
+  <div class="container">
+    <p class="section-eyebrow center">A Glimpse Inside</p>
+    <h2 class="section-title center">Our Gallery</h2>
+    <div class="gallery-masonry" id="galleryGrid"><!-- injected by JS --></div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+  <img id="lightboxImg" src="" alt="Gallery preview">
+</div>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section class="why section">
+  <div class="container">
+    <p class="section-eyebrow center">Our Promise</p>
+    <h2 class="section-title center">Why Choose Royal Spice</h2>
+    <div class="why-grid" id="whyGrid"><!-- injected by JS --></div>
+  </div>
+</section>
+
+<!-- ================= STATISTICS ================= -->
+<section class="stats">
+  <div class="pattern-bg rangoli-pattern"></div>
+  <div class="container stats-grid" id="statsGrid"><!-- injected by JS --></div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section id="testimonials" class="testimonials section">
+  <div class="container">
+    <p class="section-eyebrow center">Kind Words</p>
+    <h2 class="section-title center">What Our Guests Say</h2>
+    <div class="testi-track-wrap">
+      <div class="testi-track" id="testiTrack"><!-- injected by JS --></div>
+    </div>
+    <div class="testi-dots" id="testiDots"></div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq section">
+  <div class="container faq-wrap">
+    <p class="section-eyebrow center">Questions</p>
+    <h2 class="section-title center">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion"><!-- injected by JS --></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact section">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <p class="section-eyebrow">Get in Touch</p>
+      <h2 class="section-title">Visit or Reach Us</h2>
+      <div class="contact-item"><i class="fa-solid fa-location-dot"></i><div><strong>Address</strong><p>Marris Road, Near Centre Point, Civil Lines, Aligarh, Uttar Pradesh – 202001</p></div></div>
+      <div class="contact-item"><i class="fa-solid fa-phone"></i><div><strong>Phone</strong><p>+91 98765 xxxxx</p></div></div>
+      <div class="contact-item"><i class="fa-solid fa-envelope"></i><div><strong>Email</strong><p>hello@royaltadka.in</p></div></div>
+      <div class="contact-item"><i class="fa-solid fa-clock"></i><div><strong>Opening Hours</strong><p>Mon–Sun: 11:00 AM – 11:30 PM</p></div></div>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="contact-map reveal">
+      <div class="map-placeholder">
+        <i class="fa-solid fa-map-location-dot"></i>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3526.207914911278!2d78.08081387467934!3d27.895592276075163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a4eb39e1ed43%3A0xb5a457364f2824b9!2sMarris%20Rd%2C%20Aligarh%2C%20Uttar%20Pradesh%20202001!5e0!3m2!1sen!2sin!4v1783190242255!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="pattern-bg mandala-pattern faint"></div>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="logo"><img src="logo-transparent.png" alt="Royal Tadka" class="logo-img"></a>
+      <p>Where royal Indian heritage meets modern luxury dining.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#about">About</a><a href="#menu">Menu</a><a href="#booking">Table Booking</a><a href="#gallery">Gallery</a>
+    </div>
+    <div class="footer-col">
+      <h4>Menu</h4>
+      <a href="#menu">Indian</a><a href="#menu">Chinese</a><a href="#menu">Italian</a><a href="#menu">Desserts</a>
+    </div>
+    <div class="footer-col">
+      <h4>Policies</h4>
+      <a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Refund Policy</a>
+    </div>
+    <div class="footer-col newsletter">
+      <h4>Newsletter</h4>
+      <p>Get festive offers straight to your inbox.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Royal Tadka. All rights reserved. Crafted with <i class="fa-solid fa-heart"></i> in Aligarh.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<div class="toast-container" id="toastContainer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
