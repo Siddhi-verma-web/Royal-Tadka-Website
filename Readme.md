@@ -65,3 +65,4 @@ This project is open for personal and educational use. Feel free to fork and cus
 ## 🙋 Contact
 
 Built by **[Siddhi Verma]** — feel free to reach out for suggestions or collaboration.
+ update for Pull Shark badge.
